@@ -6,7 +6,7 @@ def Compostion(k, Text):
         kmers.append(kmer)
     return kmers
 
-with open(r"C:\Users\LENOVO\Downloads\dataset_30153_3 (5).txt", "r") as file:
+with open(r"C:\Users\LENOVO\Downloads\dataset_30153_3 (6).txt", "r") as file:
     lines = file.read().strip().splitlines()
     k = int(lines[0])
     Text = ''.join(lines[1:]).replace(' ', '').strip()
