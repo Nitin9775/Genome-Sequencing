@@ -11,7 +11,10 @@ def Overlap(Patterns):
             Overlap_graph[pattern] = overlaps
     return Overlap_graph
 
-Patterns = ["ATGCG", "GCATG", "CATGC", "AGGCA", "GGCAT", "GGCAC"]
+with open(r"C:\Users\LENOVO\Downloads\dataset_30182_10.txt", "r") as file:
+    content = file.read()
+
+Patterns = content.split()
 graph = Overlap(Patterns)
 
 for key in graph:
