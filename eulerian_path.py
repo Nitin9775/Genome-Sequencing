@@ -19,7 +19,6 @@ def find_eulerian_path(adj_list):
     out_degree = defaultdict(int)
     nodes = set()
 
-    adj = defaultdict(deque)
     for src, dests in adj_list.items():
         for dest in dests:
             graph[src].append(dest)
